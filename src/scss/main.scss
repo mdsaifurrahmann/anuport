@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-slate-100;
+}
+
+.header {
+    @apply mt-[200px];
+
+    ul.professions {
+        li {
+            @apply block md:inline-block;
+        }
+
+        li::after {
+            content: '|';
+            @apply ml-2.5 hidden md:inline-block;
+            // margin: 0 0 0 10px;
+            // display: inline-block;
+        }
+
+        li:last-child::after {
+            content: '';
+        }
+    }
+
+    div.grid {
+        @apply mt-32 h-[700px];
+
+        .grid-item {
+            @apply overflow-hidden absolute rounded-xl h-56 sm:h-[350px] lg:h-[480px] cursor-pointer;
+
+            img {
+                @apply w-full object-cover h-full;
+            }
+        }
+    }
+}

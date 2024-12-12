@@ -1,0 +1,1 @@
+VanillaTilt.init(document.querySelectorAll(".tilt"));
