@@ -56,21 +56,23 @@ function browserSyncInit(done) {
 function watchFiles(done) {
     gulp.watch('src/scss/**/*.scss', compileSass);
     gulp.watch('src/js/**/*.js', compileJs);
-    gulp.watch('src/assets/**/*', copyAssets);
-    gulp.watch('./*.html').on('change', compileSass, compileJs, copyAssets);
+    // gulp.watch('src/assets/**/*', copyAssets);
+    gulp.watch('./*.html').on('change', compileSass, compileJs);
+    // gulp.watch('./*.html').on('change', compileSass, compileJs, copyAssets);
     gulp.watch('./*.html').on('change', browserSync.reload);
     done();
 }
 
 // Copy assets
-function copyAssets() {
-    return gulp.src('src/assets/**/*') // Match all files and folders under src/assets
-        .pipe(gulp.dest('public/assets')); // Output to public/assets
-}
+// function copyAssets() {
+//     return gulp.src('src/assets/**/*') // Match all files and folders under src/assets
+//         .pipe(gulp.dest('public/assets')); // Output to public/assets
+// }
 
 // Define complex tasks
-const build = gulp.series(compileSass, compileJs, copyAssets);
-const assets = gulp.series(copyAssets);
+const build = gulp.series(compileSass, compileJs);
+// const build = gulp.series(compileSass, compileJs, copyAssets);
+// const assets = gulp.series(copyAssets);
 const javascript = gulp.series(compileJs);
 const scss = gulp.series(compileSass);
 const watch = gulp.parallel(watchFiles, browserSyncInit);
@@ -79,10 +81,10 @@ const watch = gulp.parallel(watchFiles, browserSyncInit);
 // Export tasks
 exports.sass = compileSass;
 exports.js = compileJs;
-exports.assets = assets;
+// exports.assets = assets;
 exports.javascript = javascript;
 exports.scss = scss;
 exports.build = build;
 exports.watch = watch;
-exports.assets = copyAssets;
+// exports.assets = copyAssets;
 exports.default = gulp.series(build, watch);

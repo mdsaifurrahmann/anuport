@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    @apply mt-[200px];
+    @apply mt-32;
 
     ul.professions {
         li {
@@ -37,4 +37,19 @@ body {
             }
         }
     }
+}
+
+.story {
+    @apply mt-32;
+
+    span.highlight {
+        @apply rounded-xl px-2 bg-opacity-80;
+    }
+
+    div.story-drop-shadow {
+        -webkit-box-shadow: 0px -5px 31.6px 0px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px -5px 31.6px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px -5px 31.6px 0px rgba(0, 0, 0, 0.15);
+    }
+
 }
