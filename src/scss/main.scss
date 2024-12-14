@@ -42,6 +42,31 @@ body {
 .story {
     @apply mt-32;
 
+    h2{
+        @apply uppercase font-alata text-[4.3rem] md:text-8xl text-center;
+    }
+
+    .left{
+        @apply w-full lg:w-[57%] 2xl:w-[56%] order-2;
+
+        .paragraph{
+            @apply font-grandiflora text-2xl text-center 2xl:w-10/12 lg:ml-auto lg:px-8 2xl:px-[34px] 2xl:leading-[2.46rem];
+        }
+    }
+
+    .right{
+        @apply w-10/12 mx-auto lg:w-[43%] 2xl:w-[44%] lg:absolute lg:right-0 lg:-top-[3.3rem] relative -top-10 order-1;
+
+        .img-container{
+            @apply overflow-hidden rounded-xl h-[518px] 2xl:h-[650px];
+        }
+
+        .connect{
+            @apply flex bg-slate-900 px-5 py-4 mt-4 rounded-xl justify-between;
+        }
+
+    }
+
     span.highlight {
         @apply rounded-xl px-2 bg-opacity-80;
     }
