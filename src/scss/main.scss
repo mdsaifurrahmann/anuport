@@ -6,6 +6,40 @@ body {
     @apply bg-slate-100;
 }
 
+h2.title {
+    @apply uppercase font-alata text-[4.3rem] md:text-8xl text-center;
+}
+
+.vertical-text {
+    @apply -rotate-90 absolute text-4xl md:text-[2.6rem] font-grandiflora z-20 hidden xxs:block;
+}
+
+.img-container {
+    @apply overflow-hidden rounded-xl;
+}
+
+.img-drop-shadow {
+    -webkit-box-shadow: 0px -5px 31.6px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px -5px 31.6px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px -5px 31.6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.img-drop-shadow-2 {
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.connect {
+    @apply flex bg-slate-900 px-6 py-3 rounded-xl capitalize font-alata;
+}
+
+.cars-desc {
+    background: rgb(162, 49, 194);
+    background: linear-gradient(90deg, rgba(162, 49, 194, 1) 0%, rgba(117, 26, 142, 1) 49%, rgba(71, 2, 90, 1) 100%);
+    @apply rounded-xl px-6 py-3 text-slate-100 font-alata;
+}
+
 .header {
     @apply mt-32;
 
@@ -42,27 +76,23 @@ body {
 .story {
     @apply mt-32;
 
-    h2{
-        @apply uppercase font-alata text-[4.3rem] md:text-8xl text-center;
-    }
-
-    .left{
+    .left {
         @apply w-full lg:w-[57%] 2xl:w-[56%] order-2;
 
-        .paragraph{
+        .paragraph {
             @apply font-grandiflora text-2xl text-center 2xl:w-10/12 lg:ml-auto lg:px-8 2xl:px-[34px] 2xl:leading-[2.46rem];
         }
     }
 
-    .right{
+    .right {
         @apply w-10/12 mx-auto lg:w-[43%] 2xl:w-[44%] lg:absolute lg:right-0 lg:-top-[3.3rem] relative -top-10 order-1;
 
-        .img-container{
-            @apply overflow-hidden rounded-xl h-[518px] 2xl:h-[650px];
+        .img-container {
+            @apply h-[518px] 2xl:h-[650px];
         }
 
-        .connect{
-            @apply flex bg-slate-900 px-5 py-4 mt-4 rounded-xl justify-between;
+        .resume {
+            @apply absolute px-6 py-3 top-[13%] -right-14 md:-right-[70px] bg-violet-600 capitalize text-slate-100 font-alata rounded-xl;
         }
 
     }
@@ -71,10 +101,14 @@ body {
         @apply rounded-xl px-2 bg-opacity-80;
     }
 
-    div.story-drop-shadow {
-        -webkit-box-shadow: 0px -5px 31.6px 0px rgba(0, 0, 0, 0.15);
-        -moz-box-shadow: 0px -5px 31.6px 0px rgba(0, 0, 0, 0.15);
-        box-shadow: 0px -5px 31.6px 0px rgba(0, 0, 0, 0.15);
-    }
+}
 
+.project {
+    @apply mt-32;
+
+    .cars {
+        .vertical-text {
+            @apply rotate-0 lg:-rotate-90 static lg:absolute text-3xl md:text-[2.6rem] font-grandiflora z-20 text-center mb-8 #{!important};
+        }
+    }
 }

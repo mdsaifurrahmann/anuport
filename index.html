@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&family=Grandiflora+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="public/css/main.css">
 </head>
@@ -15,7 +16,7 @@
 <body>
 
     <header class="header">
-        <div class="container w-9/12">
+        <div class="container w-10/12 md:w-9/12">
             <h2 class="font-alata text-5xl md:text-8xl">ANURAG DAS</h2>
             <ul class="font-grandiflora text-3xl md:text-5xl professions">
                 <li class="capitalize"><span class="uppercase">ux/ui</span> designer</li>
@@ -66,8 +67,8 @@
     </header>
 
     <section class="story">
-        <div class="container w-9/12">
-            <h2>my story</h2>
+        <div class="container w-10/12 md:w-9/12">
+            <h2 class="title">my story</h2>
 
             <div class="flex flex-col lg:flex-row lg:relative">
                 <div class="left">
@@ -93,16 +94,15 @@
                 <div class="right">
 
                     <div class="relative">
-                        <div class="img-container story-drop-shadow">
+                        <div class="img-container img-drop-shadow">
                             <img src="./assets/images/story.jpg" alt="story" class="h-full object-cover w-full">
-                        
+
                         </div>
-                        <a href="#"
-                            class="absolute px-6 py-3 top-[13%] -right-[70px] bg-violet-600 capitalize text-slate-100 font-alata rounded-xl">view
+                        <a href="#" class="resume">view
                             resume</a>
                     </div>
 
-                    <a class="connect " href="https://linkedin.com">
+                    <a class="connect mt-4 justify-between" href="https://linkedin.com">
                         <div class="text-alata text-slate-100 capitalize">let's connect</div>
                         <div>
                             <img src="./assets/images/linkedin.svg" alt="linkedin">
@@ -112,9 +112,126 @@
             </div>
         </div>
     </section>
+    <!-- absolute top-16 w-full -->
+    <section class="project">
+        <div class="container w-10/12 xxs:w-9/12">
+            <div class="relative">
+                <h2 class="title">projects</h2>
+                <div class="vertical-text text-orange-600 -left-[348px] md:-left-[398px] top-[365px] md:top-[405px]">
+                    <p>UX/UI Design | HR Recruitment System</p>
+                </div>
+                <div class="grid grid-cols-5 gap-4 w-full relative -top-8">
+                    <div class="col-span-5">
+                        <div class="img-container img-drop-shadow h-[232px] md:h-[332px] lg:h-[432px]">
+                            <img src="./assets/images/UI.jpg" alt="project"
+                                class="object-cover w-full h-full object-top">
+                        </div>
+                    </div>
+                    <div class="col-span-5 lg:col-span-3">
+                        <div class="img-container img-drop-shadow">
+                            <img src="./assets/images/ai-resume.png" alt="project"
+                                class="w-full h-32 sm:h-44 md:h-56 lg:h-44 xl:h-52 2xl:h-[328px]">
+                        </div>
+                    </div>
+                    <div class="col-span-5 lg:col-span-2">
+                        <div class="img-container img-drop-shadow">
+                            <img src="./assets/images/authentication.jpg" alt="project"
+                                class="w-full object-cover h-32 sm:h-44 md:h-56 lg:h-44 xl:h-52 2xl:h-[328px]">
+                        </div>
+                    </div>
+                    <div class="col-span-5 lg:col-span-3">
+                        <a href="#"
+                            class="capitalize font-alata img-drop-shadow bg-slate-200 w-full block rounded-xl py-3 px-6 border border-slate-300">
+                            case study & design process
+                        </a>
+                    </div>
+                    <div class="col-span-5 lg:col-span-2">
+                        <a href="#" class="connect border justify-center lg:justify-between border-transparent">
+                            <div class="text-alata text-slate-100 capitalize mr-4 lg:mr-0">live preview</div>
+                            <div>
+                                <img src="./assets/images/figma.svg" alt="linkedin">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container w-12/12 xxs:w-9/12 mt-20 lg:mt-28 cars">
+            <div class="relative">
+                <div class="vertical-text text-violet-600 -left-[347px] md:-left-[247px] top-[365px] md:top-[194px]">
+                    <p>Luxury Car Rental App</p>
+                </div>
+
+
+                <!-- Slider main container -->
+                <div class="w-12/12 xl:w-full mx-auto">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide img-container border border-violet-600">
+                                <div class="img-drop-shadow-2">
+                                    <img src="./assets/images/cars/welcome.jpg" alt="project"
+                                        class="object-cover object-top w-full h-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide img-container border border-violet-600">
+                                <div class="img-drop-shadow-2">
+                                    <img src="./assets/images/cars/signup.jpg" alt="project"
+                                        class="object-cover object-top w-full h-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide img-container border border-violet-600">
+                                <div class="img-drop-shadow-2">
+                                    <img src="./assets/images/cars/welcome.jpg" alt="project"
+                                        class="object-cover object-top w-full h-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide img-container border border-violet-600">
+                                <div class="img-drop-shadow-2">
+                                    <img src="./assets/images/cars/4.jpg" alt="project"
+                                        class="object-cover object-top w-full h-full">
+                                </div>
+                            </div>
+                            <div class="swiper-slide img-container border border-violet-600">
+                                <div class="img-drop-shadow-2">
+                                    <img src="./assets/images/cars/welcome.jpg" alt="project"
+                                        class="object-cover object-top w-full h-full">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-10 gap-4 mt-4">
+                    <div class="col-span-10 2lg:col-span-9 cars-desc">
+                        <p>Designed as a college assignment, Veloride is a UX/UI project targeted at younger audiences. <br>
+                        With a focus on intuitive navigation and stylish aesthetics, this mobile app simplifies the process of renting luxury
+                        cars.</p>
+                    </div>
+                    <div class="col-span-10 2lg:col-span-1">
+                        <a href="#" class="connect border justify-center 2lg:justify-between border-transparent 2lg:relative">
+                            <div class="order-2 2lg:order-1 2lg:absolute left-0 top-0">
+                                <img src="./assets/images/figma.svg" alt="linkedin" class="2lg:w-14 2lg:h-14">
+                            </div>
+                            <div class="order-1 2lg:order-2 text-alata text-slate-100 capitalize mr-4 lg:mr-0 text-right">live preview</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
 
 
     <script src="public/js/tilt.min.js"></script>
+    <script src="public/js/swiper-bundle.min.js"></script>
     <script type="module" src="public/js/main.js"></script>
 </body>
 
