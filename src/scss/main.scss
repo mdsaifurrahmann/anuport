@@ -150,3 +150,14 @@ h2.title {
         @apply font-alata text-center text-sm py-16 tracking-extreme-normal md:tracking-extreme;
     }
 }
+
+.pride {
+
+    @apply h-full w-4 absolute top-0 left-0 hidden md:block;
+
+    background: rgb(241, 245, 249);
+    background: -moz-linear-gradient(180deg, rgba(241, 245, 249, 1) 0%, rgba(253, 117, 54, 1) 13%, rgba(131, 56, 236, 1) 26%, rgba(73, 3, 92, 1) 43%, rgba(218, 41, 28, 1) 46%, rgba(207, 14, 0, 1) 63%, rgba(0, 0, 0, 1) 74%, rgba(241, 245, 249, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(241, 245, 249, 1) 0%, rgba(253, 117, 54, 1) 13%, rgba(131, 56, 236, 1) 26%, rgba(73, 3, 92, 1) 43%, rgba(218, 41, 28, 1) 46%, rgba(207, 14, 0, 1) 63%, rgba(0, 0, 0, 1) 74%, rgba(241, 245, 249, 1) 100%);
+    background: linear-gradient(180deg, rgba(241, 245, 249, 1) 0%, rgba(253, 117, 54, 1) 13%, rgba(131, 56, 236, 1) 26%, rgba(73, 3, 92, 1) 43%, rgba(218, 41, 28, 1) 46%, rgba(207, 14, 0, 1) 63%, rgba(0, 0, 0, 1) 74%, rgba(241, 245, 249, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f5f9", endColorstr="#f1f5f9", GradientType=1);
+}
