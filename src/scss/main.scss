@@ -131,15 +131,22 @@ h2.title {
         @apply h-[800px] sm:h-[900px] lg:h-[800px] #{!important};
     }
 
-    .heading{
+    .heading {
         @apply font-alata text-slate-100 text-5xl lg:text-6xl font-bold mb-5;
     }
 
-    .btn{
+    .btn {
         @apply bg-slate-900 text-xl flex justify-center text-slate-100 px-9 py-4 rounded-xl font-alata w-fit justify-self-end mb-4;
     }
 }
 
-.inspired{
+.inspired,
+.get-in-touch {
     @apply mt-32;
+}
+
+.get-in-touch {
+    .copy-right {
+        @apply font-alata text-center text-sm py-16 tracking-extreme-normal md:tracking-extreme;
+    }
 }
