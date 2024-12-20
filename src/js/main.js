@@ -23,3 +23,18 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
     },
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    console.log('%c Developed By', 'color: #4f46e5; font-size: 16px; font-weight: bold; padding: 5px');
+
+    console.log(`
+		'     ____          _      _                     _     _        ___
+		'    / ___|___   __| | ___| |__  _   _ _ __ ___ | |__ | | ___  |_ _|_ __   ___
+		'   | |   / _ \\ / _\` |/ _ \\ '_ \\| | | | '_ \` _ \\| '_ \\| |/ _ \\  | || '_ \\ / __|
+		'   | |__| (_) | (_| |  __/ |_) | |_| | | | | | | |_) | |  __/  | || | | | (__ _
+		'    \\____\\___/ \\__,_|\\___|_.__/ \\__,_|_| |_| |_|_.__/|_|\\___| |___|_| |_|\\___(_)
+		'
+	`)
+
+})
