@@ -11,7 +11,7 @@
 // }
 
 h2.title {
-    @apply uppercase font-alata text-[5rem] md:text-9xl text-center;
+    @apply uppercase font-alata text-[5rem] xl:text-[7rem] 2xl:text-9xl text-center;
 }
 
 .vertical-text {
@@ -139,7 +139,7 @@ h2.title {
     @apply mt-40;
 
     .title {
-        @apply leading-[0.8] text-[7rem];
+        @apply leading-[0.8] md:text-7xl xl:text-[7rem];
     }
 
     .masonry.grid {
