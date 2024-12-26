@@ -1,0 +1,43 @@
+{
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "icons": [
+        {
+            "sizes": "192x192",
+            "src": "./assets/images/icons/favicon/android-chrome-192x192.png",
+            "type": "image/png"
+        },
+        {
+            "sizes": "512x512",
+            "src": "./assets/images/icons/favicon/android-chrome-512x512.png",
+            "type": "image/png"
+        }
+    ],
+    "name": "Anurag's Portfolio",
+    "short_name": "Anurag Das",
+    "theme_color": "#ffffff",
+    "start_url": "./index.html",
+    "scope": "./",
+    "description": "A portfolio website showcasing the work and skills of Anurag Das.",
+    "orientation": "portrait-primary",
+    "lang": "en",
+    "categories": [
+        "portfolio",
+        "personal",
+        "resume"
+    ],
+    "screenshots": [
+        {
+            "src": "./assets/images/icons/favicon/screenshot-desktop.png",
+            "sizes": "1920x1080",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "./assets/images/icons/favicon/screenshot-mobile.png",
+            "sizes": "1080x1920",
+            "type": "image/png",
+            "form_factor": "narrow"
+        }
+    ]
+}
