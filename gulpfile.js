@@ -5,7 +5,7 @@ const tailwindcss = require('tailwindcss');
 const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 const cssnano = require('cssnano');
-
+ 
 // Compile SCSS
 function compileSass() {
     return gulp.src('src/scss/**/*.scss')
